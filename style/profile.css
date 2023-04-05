@@ -13,6 +13,10 @@
     font-family: istokWeb;
 }
 
+html {
+    background-color: var(--first);
+}
+
 div.circle1, div.circle2 {
     overflow: auto;
     position: absolute;
@@ -53,7 +57,7 @@ div h1 {
     float: right;
     font-size: 32px;
     font-family: islandMoment;
-    padding-top: 20pt;
+    padding-top: 40pt;
     margin-right: 20pt;
 }
 
