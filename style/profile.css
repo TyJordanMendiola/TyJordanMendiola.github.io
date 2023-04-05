@@ -1,0 +1,88 @@
+:root {
+    --first: #50b0f0;
+    --second: #99cef2;
+    --third: #255270;
+    --fourth: #476070;
+    --fifth: #3e8abd;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: istokWeb;
+}
+
+div.circle1, div.circle2 {
+    overflow: auto;
+    position: absolute;
+    width: 100pt;
+    height: 100pt;
+    border-radius: 8em;
+    background-image: radial-gradient(white, var(--second));
+    z-index: 0;
+}
+
+div.circle1 {
+    transform: translateX(340pt) translateY(100pt);
+}
+
+div.circle2 {
+    transform: translateX(-40pt) translateY(-150pt);
+}
+
+section {
+    display: grid;
+    grid-template: auto auto / auto;
+    column-gap: 100px;
+    row-gap: 100px;
+}
+
+section div {
+    width: 520px;
+    height: 360px;
+    justify-content: space-evenly;
+    align-self: center;
+    color: var(--second);
+    background-color: var(--third);
+    border-radius: 1.2em;
+    margin: 50pt;
+}
+
+div h1 {
+    float: right;
+    font-size: 32px;
+    font-family: islandMoment;
+    padding-top: 20pt;
+    margin-right: 20pt;
+}
+
+div.pList {
+    background-color: var(--fourth);
+    width: fit-content;
+    height: fit-content;
+    padding: 10pt;
+    transform: translateY(10pt);
+}
+
+div.pList p {
+    font-size: 18px;
+}
+
+#div1 {
+    grid-column: 1 / span 2;
+}
+
+#div2 {
+    grid-column: 3 / span 2;
+}
+
+@font-face {
+    font-family: istokWeb;
+    src: url(../fonts/IstokWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family: islandMoment;
+    src: url(../fonts/IslandMoments-Regular.ttf);
+}
