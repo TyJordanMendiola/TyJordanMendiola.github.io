@@ -80,7 +80,7 @@ div.links a {
 
 /* Content Style */
 
-div.newIntro {
+div.newIntro, div.intro2 {
     overflow: auto;
     width: 100%;
     min-height: fit-content;
@@ -219,7 +219,7 @@ div.items {
     min-height: fit-content;
     display: grid;
     grid-template: repeat(3, auto) / auto;
-    column-gap: 150px;
+    column-gap: 130px;
     align-self: center;
 }
 
@@ -236,6 +236,7 @@ div.items {
     width: fit-content;
     display: flex;
     flex-direction: row;
+    margin-top: 10pt;
 }
 
 div.items img {
@@ -253,6 +254,10 @@ div.items img {
 
 #s3 {
     grid-column: 5 / span 2;
+}
+
+div.school {
+    
 }
 
 /* Button Properties*/

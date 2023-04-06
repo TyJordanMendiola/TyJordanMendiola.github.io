@@ -57,7 +57,7 @@ div h1 {
     float: right;
     font-size: 32px;
     font-family: islandMoment;
-    padding-top: 40pt;
+    padding-top: 20pt;
     margin-right: 20pt;
 }
 
@@ -65,8 +65,9 @@ div.pList {
     background-color: var(--fourth);
     width: fit-content;
     height: fit-content;
+    line-height: 30pt;
     padding: 10pt;
-    transform: translateY(10pt);
+    transform: translateY(20pt);
 }
 
 div.pList p {
