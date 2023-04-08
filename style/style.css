@@ -78,6 +78,10 @@ div.links a {
     cursor: pointer;
 }
 
+div.links a.active {
+    color: var(--fourth);
+}
+
 /* Content Style */
 
 div.newIntro, div.intro2 {
@@ -257,7 +261,8 @@ div.items img {
 }
 
 div.school {
-    
+    overflow: auto;
+    position: relative;
 }
 
 /* Button Properties*/
