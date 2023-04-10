@@ -20,12 +20,26 @@ main {
     overflow: auto;
     position: relative;
     height: fit-content;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template: auto / repeat(auto, 3);
 }
 
 div.display {
     width: 100%;
-    height: 45pt;
+    height: fit-content;
+    display: grid;
+    grid-template: repeat(auto, 2) / auto;
     background-color: var(--third);
+    justify-content: center;
+    align-content: center;
+}
+
+div.display section {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 100pt;
+    height: 100pt;
 }
