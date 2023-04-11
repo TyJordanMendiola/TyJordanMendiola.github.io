@@ -14,6 +14,8 @@
 
 html {
     background-color: var(--first);
+    display: flex;
+    flex-direction: column;
 }
 
 main {
@@ -21,13 +23,16 @@ main {
     position: relative;
     height: fit-content;
     display: grid;
+    margin-top: 30pt;
     grid-template: auto / repeat(auto, 3);
+    row-gap: 50pt;
 }
 
 div.display {
     width: 100%;
     height: fit-content;
     display: grid;
+    padding: 30pt;
     grid-template: repeat(auto, 2) / auto;
     background-color: var(--third);
     justify-content: center;
