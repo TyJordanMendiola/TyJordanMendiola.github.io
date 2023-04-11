@@ -18,30 +18,57 @@ html {
     flex-direction: column;
 }
 
+div.links {
+    width: 100%;
+    height: 40pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.links a {
+    display: inline-block;
+    padding: 20pt;
+    color: var(--third);
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2pt;
+    cursor: pointer;
+}
+
+div.links a.active {
+    color: var(--fourth);
+}
+
 main {
     overflow: auto;
     position: relative;
     height: fit-content;
     display: grid;
     margin-top: 30pt;
-    grid-template: auto / repeat(auto, 3);
+    grid-template: repeat(auto, 3) / auto;
     row-gap: 50pt;
 }
 
 div.display {
     width: 100%;
     height: fit-content;
-    display: grid;
     padding: 30pt;
-    grid-template: repeat(auto, 2) / auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
     background-color: var(--third);
     justify-content: center;
     align-content: center;
 }
 
 div.display section {
-    display: flex;
-    flex-direction: row;
+    margin: 20pt;
+}
+
+div.link {
+    text-align: center;
 }
 
 img {
