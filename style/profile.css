@@ -28,7 +28,7 @@ div.links {
 
 div.links a {
     display: inline-block;
-    padding: 20pt;
+    margin: 20pt;
     color: var(--third);
     text-decoration: none;
     font-size: 18px;
