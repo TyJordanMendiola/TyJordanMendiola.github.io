@@ -40,6 +40,12 @@ div.links a {
     cursor: pointer;
 }
 
+div.links a:hover {
+    animation-name: highlightLink;
+    animation-duration: 0.8s;
+    color: var(--second);
+}
+
 div.links a.active {
     color: var(--fourth);
 }
@@ -95,6 +101,15 @@ img {
     width: 100pt;
     height: 100pt;
     margin-left: 30pt;
+}
+
+@-webkit-keyframes highlightLink {
+    from {
+        color: var(--third);
+    }
+    to {
+        color: var(--second);
+    }
 }
 
 @font-face {

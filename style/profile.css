@@ -38,6 +38,12 @@ div.links a {
     cursor: pointer;
 }
 
+div.links a:hover {
+    animation-name: highlightLink;
+    animation-duration: 0.8s;
+    color: var(--second)
+}
+
 div.links a.active {
     color: var(--fourth);
 }
@@ -119,6 +125,11 @@ div.pList p {
     font-size: 18px;
 }
 
+div.centerImage {
+    width: 100%;
+    padding: 20pt;
+}
+
 #div1 {
     grid-column: 1 / span 2;
 }
@@ -127,9 +138,65 @@ div.pList p {
     grid-column: 3 / span 2;
 }
 
+footer {
+    overflow: auto;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding: 20pt;
+    background-color: var(--second);
+}
+
+footer h1 {
+    color: var(--third);
+    font-size: 32px;
+    font-family: istokBold;
+    -webkit-text-stroke-width: 0.4pt;
+    -webkit-text-stroke-color: var(--fifth);
+}
+
+section.contact {
+    display: grid;
+    grid-template: auto / repeat(3, auto);
+    justify-content: center;
+}
+
+section.contact img {
+    width: 100pt;
+    height: 100pt;
+}
+
+section.contact div {
+    width: 220pt;
+    height: 220pt;
+    display: flex;
+    flex-direction: column;
+    background-color: ;
+}
+
+h2 {
+    font-size: 26px;
+    text-align: center;
+    color: var(--second);
+}
+
+@-webkit-keyframes highlightLink {
+    from {
+        color: var(--third);
+    }
+    to {
+        color: var(--second);
+    }
+}
+
 @font-face {
     font-family: istokWeb;
     src: url(../fonts/IstokWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family: istokBold;
+    src: url(../fonts/IstokWeb-Bold.ttf);
 }
 
 @font-face {
