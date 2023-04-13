@@ -73,12 +73,18 @@ div.links a {
     margin: 20pt;
     color: var(--third);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     letter-spacing: 2pt;
     cursor: pointer;
 }
 
-div.links a.active {
+div.links a:hover {
+    animation-name: highlightLink;
+    animation-duration: 0.8s;
+    color: var(--second);
+}
+
+div.links a.active, div.links a.active:hover {
     color: var(--fourth);
 }
 
@@ -321,6 +327,15 @@ div.button p {
 }
 
 /* Other Properties */
+
+@-webkit-keyframes highlightLink {
+    from {
+        color: var(--third);
+    }
+    to {
+        color: var(--second);
+    }
+}
 
 @font-face {
     font-family: istokWeb;
