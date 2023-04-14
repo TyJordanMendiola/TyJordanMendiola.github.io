@@ -48,6 +48,8 @@ div.links a.active {
     color: var(--fourth);
 }
 
+/* Content Style */
+
 div.circle1, div.circle2, div.circle3, div.circle4 {
     overflow: auto;
     position: absolute;
@@ -64,10 +66,10 @@ marquee {
 }
 
 marquee img {
-    width: 800pt;
-    height: 400pt;
+    width: 500pt;
+    height: 300pt;
     border: 8px solid var(--fourth);
-    padding: 10pt;
+    margin: 20pt;
 }
 
 div.circle1 {
@@ -127,7 +129,15 @@ div.pList p {
 
 div.centerImage {
     width: 100%;
-    padding: 20pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.centerImage img {
+    width: 260pt;
+    height: 260pt;
+    margin: 20pt;
 }
 
 #div1 {
@@ -158,6 +168,7 @@ footer h1 {
 section.contact {
     display: grid;
     grid-template: auto / repeat(3, auto);
+    color: var(--second);
     justify-content: center;
 }
 
@@ -174,10 +185,14 @@ section.contact div {
     background-color: ;
 }
 
+section.contact p {
+    font-size: 18px;
+    text-align: center;
+}
+
 h2 {
     font-size: 26px;
     text-align: center;
-    color: var(--second);
 }
 
 @-webkit-keyframes highlightLink {

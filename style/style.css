@@ -44,6 +44,12 @@ main div.title h1 {
     padding-top: 20pt;
 }
 
+main div.title p {
+    font-size: 18px;
+    text-align: center;
+    color: var(--second);
+}
+
 main div.info {
     background-color: var(--second);
     width: 30%;
@@ -283,6 +289,7 @@ div.school h1.mainHeader {
     font-size: 32px;
     float: left;
     color: var(--third);
+    margin-bottom: 10pt;
 }
 
 div.sItems {
@@ -303,9 +310,9 @@ div.content {
     flex-direction: column;
 }
 
-div.content div img {
-    width: 200pt;
-    height: 200pt;
+div.content img {
+    width: 140pt;
+    height: 140pt;
     float: right;
 }
 
