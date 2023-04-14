@@ -17,6 +17,71 @@ html {
     background-color: var(--first);
 }
 
+/* Header Style */
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+header div.title {
+    background-color: var(--third);
+    width: 70%;
+    height: 145px;
+    padding: 10pt;
+}
+
+header div.title h1 {
+    width: 100%;
+    color: var(--second);
+    font-size: 38px;
+    font-family: istokWeb;
+    text-align: center;
+    letter-spacing: 2pt;
+    padding-top: 20pt;
+}
+
+header div.title p {
+    font-size: 18px;
+    text-align: center;
+    color: var(--second);
+}
+
+header div.info {
+    background-color: var(--second);
+    width: 30%;
+    height: 145px;
+    display: flex;
+    flex-direction: row;
+}
+
+div.title, div.info {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.info img {
+    width: 80pt;
+    height: 80pt;
+    align-self: center;
+    margin-top: 40pt;
+}
+
+div.side {
+    width: 20pt;
+    height: 20pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.side p {
+    width: 80pt;
+    background-color: var(--fourth);
+    text-align: center;
+    align-self: center;
+}
+
 /* Link Style */
 
 div.links {
@@ -193,6 +258,27 @@ section.contact p {
 h2 {
     font-size: 26px;
     text-align: center;
+}
+
+/* Button Properties*/
+
+div.button {
+    background-color: var(--fourth);
+    width: 200px;
+    height: 80px;
+    padding: 0.2em;
+    justify-items: center;
+    border: 2px solid var(--fifth);
+    border-radius: 2rem;
+}
+
+div.button p {
+    color: var(--fifth);
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: var(--second);
+    font-size: 34px;
+    text-align: center;
+    padding-top: 10pt;
 }
 
 @-webkit-keyframes highlightLink {

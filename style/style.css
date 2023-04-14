@@ -63,6 +63,28 @@ div.title, div.info {
     align-items: center;
 }
 
+div.info img {
+    width: 80pt;
+    height: 80pt;
+    align-self: center;
+    margin-top: 40pt;
+}
+
+div.side {
+    width: 20pt;
+    height: 20pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.side p {
+    width: 80pt;
+    background-color: var(--fourth);
+    text-align: center;
+    align-self: center;
+}
+
 /* Link Style */
 
 div.links {
@@ -138,7 +160,7 @@ section.intro h1 {
 }
 
 section.intro p {
-    width: 50%;
+    width: 70%;
     color: var(--second);
     font-size: 18px;
     float: left;
