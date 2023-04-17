@@ -52,7 +52,7 @@ header div.info {
     width: 30%;
     height: 145px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 div.title, div.info {
@@ -68,10 +68,10 @@ div.info img {
 }
 
 div.side {
-    width: 20pt;
+    width: 100pt;
     height: 20pt;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
 }
 

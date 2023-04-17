@@ -1,0 +1,30 @@
+:root {
+    --first: #50b0f0;
+    --second: #99cef2;
+    --third: #255270;
+    --fourth: #476070;
+    --fifth: #3e8abd;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--first);
+}
+
+body {
+    display: grid;
+    grid-template: auto / repeat(2, auto);
+}
+
+.rectangle {
+    overflow: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 10pt;
+}

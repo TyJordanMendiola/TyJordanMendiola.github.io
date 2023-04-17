@@ -55,7 +55,7 @@ main div.info {
     width: 30%;
     height: 145px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 div.title, div.info {
@@ -71,15 +71,15 @@ div.info img {
 }
 
 div.side {
-    width: 20pt;
+    width: 100pt;
     height: 20pt;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
 }
 
 div.side p {
-    width: 80pt;
+    width: 100pt;
     background-color: var(--fourth);
     text-align: center;
     align-self: center;
@@ -324,18 +324,23 @@ div.sItems {
 }
 
 div.content {
-    width: 740px;
-    height: 400px;
+    width: 780px;
+    height: 500px;
     background-color: var(--fourth);
     padding: 20pt;
     display: flex;
     flex-direction: column;
 }
 
+div.content h1, div.content p {
+    margin: 10pt;
+    color: var(--second);
+}
+
 div.content img {
     width: 140pt;
     height: 140pt;
-    float: right;
+    float: inline-end;
 }
 
 /* Button Properties*/
@@ -357,6 +362,11 @@ div.button p {
     font-size: 34px;
     text-align: center;
     padding-top: 10pt;
+}
+
+div.button img {
+    width: 50pt;
+    height: 50pt;
 }
 
 /* Other Properties */
