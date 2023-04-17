@@ -71,16 +71,25 @@ div.info img {
 div.side {
     width: 100pt;
     height: 20pt;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template: auto / repeat(2, auto);
+    column-gap: 20pt;
     justify-content: center;
 }
 
 div.side p {
-    width: 80pt;
+    width: 120pt;
+    font-size: 18px;
     background-color: var(--fourth);
+    color: var(--fifth);
+    border-radius: 8rem;
     text-align: center;
     align-self: center;
+    cursor: pointer;
+}
+
+div.side p:hover {
+    color: var(--second);
 }
 
 /* Link Style */
@@ -138,13 +147,10 @@ div.display {
     padding: 30pt;
     display: grid;
     grid-template: auto / repeat(4, auto);
+    column-gap: 80pt;
     background-color: var(--third);
     justify-content: center;
     align-content: center;
-}
-
-div.display h1 {
-
 }
 
 div.display section {
